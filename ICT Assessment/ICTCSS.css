@@ -1,0 +1,285 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-image: url("woood.png");
+	 background-repeat: repeat;
+	 background-size: cover;
+	background-size:100%;
+}
+
+#Topic ul {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+	display:inline-block;
+}
+
+#Topics li {
+  display:inline;
+	margin: auto;
+	text-align: center;
+}
+
+#hr {
+	margin: auto;
+}
+
+#p2 {
+	text-align: center;
+	font: "Aladin";
+	font: 30px;
+	
+
+}
+
+
+.box{
+	width:90px;
+	height:20px;
+	padding-left: 2px;
+}
+
+
+.green{
+	background:#0f0;
+	float: right; background-color:green;  padding-bottom: 5px;
+	top: 230px;
+	right: 100px;
+	position: absolute;
+	border-style: solid;
+	border-width: 2px;
+	 background: linear-gradient(yellow, green);
+	border-radius: 30px;
+}
+
+.green2{
+	background:#0f0;
+	float: left; background-color:green;  padding-bottom: 5px;
+	top: 230px;
+	left: 100px;
+	position: absolute;
+	border-style: solid;
+	border-radius: 30px;
+	border-width: 2px;
+  background: linear-gradient(yellow, green);
+}
+
+
+
+p.solid {border-style: dashed;}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+	color: white;
+
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button {
+  border-radius: 12px;
+	 background: linear-gradient(white, orange);
+  border: thin;
+	border-style: dashed;
+  color: black;
+  text-align: center;
+  font-size: 12.1px;
+  padding: 20px;
+	height: 60px;
+  width: 135px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button:hover {
+	background-color: green;
+	color: black;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #aaaaaa;
+	border-radius: .7em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-bottom-color: #aaaaaa;
+	border-top: 0;
+	margin-left: -29px;
+	margin-top: -29px;
+	
+}
+
+h2 {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+containerhtmlbody {
+	width:100%;
+	height:100%;
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto;
+	margin-top: 20px;
+	position: relative;
+	width: 70%;
+	height: 0;
+	padding-bottom: 40%;
+	background: #4c4c4c;
+	border: solid 10px #2c2c2c;
+}
+
+.slide_img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.slide_img img{
+	width: 100%;
+	height: 100%;
+}
+
+#i1, #i2, #i3{
+	display: none;
+}
+
+.pre, .nxt{
+	width:  12%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: rgba(88,88,88, .4);
+	z-index: 99;
+	cursor: pointer;
+	
+}
+
+.pre{
+	left: 0;
+}
+
+.nxt{
+	right: 0;
+}
+
+.nav{
+	width: 100%;
+	height: 11px;
+	bottom: 12%;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+}
+
+.dots{
+	top: -5px;
+	width: 18px;
+		height: 18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	background: rgba(0,0,0,0.6);
+	
+}
+
+.slide_img{
+	z-index: -1;
+	
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three{
+	z-index: 9;
+
+}
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3{
+background: #fff
+}
+
+.big {
+	text-align: center;
+	background-image: url(../logo.png);
+	background-size:cover;
+	background-position: center center;
+}
+
+.thing {
+	position: absolute;
+	background: hidden;
+	padding: 0.01px 0.01px;
+	display: inline-block;
+	margin-top: -200px;
+	cursor: pointer;
+}
+
+.thing .thing-text{ 
+position: absolute; 
+	z-index: 1;
+	left: 20%;
+	bottom: 125%;
+	margin-left: -75px;
+	opacity: 0;
+	transition; opacity 1s;
+	visibility: hidden;
+
+	background-color: green;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 7px;
+	padding: 6px 0;
+}
+
+.thing .thing-text:after{
+	 content: ' ';
+	top: 100%;
+	left: 50%;
+	position: absolute;
+	border-style: solid;
+	border-color: grey transparent transparent transparent;
+	margin-left: -5px;
+	border-width: 5px;
+}
+
+.thing:hover .thing-text {
+	visibility: visible;
+	opacity: 1;
+}
+
+.span {
+	font-size: 10px;
+}
